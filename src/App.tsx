@@ -646,7 +646,7 @@ export default function App() {
               
               {/* Question Image (if exists) */}
               {activeQuestions[currentIdx].imagen && (
-                <div className="w-full max-h-72 md:max-h-80 bg-white p-4 flex items-center justify-center border border-gray-700 relative overflow-hidden group">
+                <div className="w-full max-h-72 md:max-h-80 bg-white p-1 flex items-center justify-center border border-gray-700 relative overflow-hidden group">
                   <img 
                     src={activeQuestions[currentIdx].imagen.startsWith('data:') ? activeQuestions[currentIdx].imagen : `imagenes/${activeQuestions[currentIdx].imagen}`}
                     alt="Imagen de Pregunta" 
@@ -864,7 +864,7 @@ export default function App() {
                       <div className="flex flex-col md:flex-row gap-4 items-start">
                         {/* Image inside review if present */}
                         {q.imagen && (
-                          <div className="w-24 h-24 md:w-32 md:h-32 bg-white p-2 border border-gray-700 flex-shrink-0 flex items-center justify-center">
+                          <div className="w-24 h-24 md:w-32 md:h-32 bg-white p-1 border border-gray-700 flex-shrink-0 flex items-center justify-center">
                             <img 
                               src={q.imagen.startsWith('data:') ? q.imagen : `imagenes/${q.imagen}`}
                               alt="Review Sign"
