@@ -648,7 +648,7 @@ export default function App() {
               {activeQuestions[currentIdx].imagen && (
                 <div className="w-full max-h-72 md:max-h-80 bg-white p-4 flex items-center justify-center border border-gray-700 relative overflow-hidden group">
                   <img 
-                    src={activeQuestions[currentIdx].imagen.startsWith('data:') ? activeQuestions[currentIdx].imagen : `/imagenes/${activeQuestions[currentIdx].imagen}`}
+                    src={activeQuestions[currentIdx].imagen.startsWith('data:') ? activeQuestions[currentIdx].imagen : `imagenes/${activeQuestions[currentIdx].imagen}`}
                     alt="Imagen de Pregunta" 
                     className="max-h-64 md:max-h-72 object-contain transform transition-transform duration-300 group-hover:scale-105"
                   />
@@ -866,7 +866,7 @@ export default function App() {
                         {q.imagen && (
                           <div className="w-24 h-24 md:w-32 md:h-32 bg-white p-2 border border-gray-700 flex-shrink-0 flex items-center justify-center">
                             <img 
-                              src={q.imagen.startsWith('data:') ? q.imagen : `/imagenes/${q.imagen}`}
+                              src={q.imagen.startsWith('data:') ? q.imagen : `imagenes/${q.imagen}`}
                               alt="Review Sign"
                               className="max-h-full max-w-full object-contain"
                             />
